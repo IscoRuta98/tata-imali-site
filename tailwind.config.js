@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./build/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom_lime': '#bef264',
+      }
+    },
   },
   plugins: [],
 }
