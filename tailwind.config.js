@@ -19,6 +19,9 @@ module.exports = {
       },
       minHeight: {
         '90vh': '90vh',
+        '4':'4rem',
+        '8':'8rem',
+        '7':'7rem'
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
