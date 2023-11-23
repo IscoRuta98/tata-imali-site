@@ -14,12 +14,18 @@ module.exports = {
           '100%': { transform: 'scaleY(1)'},
         },
       },
+      height: {
+        '90vh': '90vh',
+      },
+      minHeight: {
+        '90vh': '90vh',
+      },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
       },
       colors: {
         'custom_lime': '#bef264',
-      }
+      },
     },
   },
   plugins: [],

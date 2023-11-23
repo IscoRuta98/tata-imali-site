@@ -8,25 +8,27 @@
     <script src="js/main.js" defer></script>
 </head>
 <body class="min-h-screen bg-slate-950">
-    <header class="bg-gray-800 text-custom_lime sticky top-0 z-10">
+    <header class="bg-gray-800 text-white font-semibold sticky top-0 z-10">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
-            <img src="./img/Tata-iMali-icon-colour-transparent.png" class="w-16 h-16">
+            
             <h1 class="text-3xl font-medium">
-                <a href="#home"> Tata-Imali</a>
+                <a href="#home">
+                    <img src="./img/Tata-iMali-logo-colour-transparent.png" class="h-16">
+                </a>
             </h1>
             <div>
                 <button id="hamburger-button" class="text-3xl sm:hidden focus:outline-none">
                     &#9776;
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                    <a href="#mission" class="hover:opacity-90">Our Mission</a>
-                    <a href="#approach" class="hover:opacity-90">Our Approach</a>
-                    <a href="#team" class="hover:opacity-90">Team</a>
+                    <a href="#mission" class="hover:text-custom_lime">Our Mission</a>
+                    <a href="#approach" class="hover:text-custom_lime">Our Approach</a>
+                    <a href="#team" class="hover:text-custom_lime">Team</a>
                 </nav>
             </div>
         </section>
         <section id="mobile-menu" class="absolute top-0 bg-gray-800 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-            <button class="text-8xl self-end px-6">
+            <button class="text-2xl self-end px-6">
                 &times;
             </button>
             <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
@@ -39,7 +41,7 @@
     </header>
 
     <main>
-        <section id="home" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12">
+        <section id="home" class="flex flex-col-reverse justify-center mx-auto h-90vh max-w-6xl items-center sm:flex-row p-6 gap-8 mb-12">
             <article class="sm:w-1/2">
                 <h2
                     class="max-w-md text-4xl font-bold sm:text-5xl sm:text-left text-white text-center">
@@ -49,21 +51,29 @@
                  Redefining micro-credit accessibility through <span class="text-custom_lime">innovative financial solutions</span>.
                 </p>
             </article>
-            <img class="w-1/2" src="./img/platform_ui.png" alt="">
+            <img class="w-1/2" src="./img/collage.svg" alt="">
         </section>
 
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
         
-        <section id="mission" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12">
+        <section id="mission" class="flex flex-col-reverse justify-center mx-auto h-90vh max-w-4xl sm:flex-row p-6 items-center gap-8 mb-12">
             <article class="flex flex-col justify-center items-center">
                 <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl text-custom_lime">
                     Our Mission
                 </h2>
                 <p class=" text-2xl mt-4 text-center text-slate-50">
-                    Our mission at Tata Imali is to empower underserved communities across South Africa and Africa as a whole by providing 
-                    accessible, fair, and legitimate microcredit solutions. We are committed to eradicating exploitative loan-sharking 
+                    <span>We</span> aim to empower underserved communities across South Africa and Africa as a whole by providing 
+                    <span class="text-custom_lime">accessible</span>, <span class="text-custom_lime">fair</span>, and <span class="text-custom_lime">legitimate microcredit solutions</span>. We are committed to eradicating exploitative loan-sharking 
                     practices and fostering financial stability, ultimately fueling economic development in these regions.
                 </p>
+                <div class="mt-10">
+                    <a href=" https://www.youtube.com/watch?v=AXhnSS0kkhE" target="_blank">
+                        <button class="border-custom_lime text-white text-2xl font-semibold border rounded-full py-2 px-10 hover:shadow-md hover:shadow-lime-800">
+                            View <span class="text-custom_lime">Demo</span>
+                        </button>
+                    </a>
+                    
+                </div>
             </article>
             
         </section>
@@ -71,7 +81,7 @@
 
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
-        <section id="approach" class="flex flex-col-reverse justify-center sm:slex-row p-6 items-center gap-8 mb-12">
+        <section id="approach" class="flex flex-col-reverse justify-center mx-auto min-h-90vh max-w-4xl sm:slex-row p-6 items-center gap-8 mb-12">
             <article class="flex flex-col justify-center items-center">
                 <h2
                         class="max-w-md text-4xl font-bold text-center sm:text-5xl text-custom_lime">
@@ -81,7 +91,7 @@
                 <li
                     class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
                     <!-- <img src="./img/gregory.png" alt="Explorer" class="w-1/2 mb-6"> -->
-                    <h3 class="text-3xl text-center text-custom_lime dark:text-white">Distribution Mechanism</h3>
+                    <h3 class="text-2xl text-center text-custom_lime dark:text-white">Distribution Mechanism</h3>
                     <p class="hidden sm:block  text-center mt-2 text-white dark:text-slate-400">
                         The Tata-Imali platform's iMali-ZAR-Stablecoin offers stability by pegging its value to the South African 
                         Rand (ZAR) and enables cost-effective transactions. Blockchain technology ensures transparency and 
@@ -92,7 +102,7 @@
                 <li
                     class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
                     <!-- <img src="./img/donel.png" alt="Adventurer" class="w-1/2 mb-6"> -->
-                    <h3 class="text-3xl text-center text-custom_lime dark:text-white">Ecosystem for Value Exchange</h3>
+                    <h3 class="text-2xl text-center text-custom_lime dark:text-white">Ecosystem for Value Exchange</h3>
                     <p class="hidden sm:block text-center mt-2 text-white dark:text-slate-400">
                         Our project establishes an ecosystem for value exchange by allowing users to cash out the 
                         iMali-ZAR-Stablecoin into mobile money, aligning with the growing mobile money usage trend. 
@@ -103,7 +113,7 @@
                 <li
                     class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
                     <!-- <img src="./img/isco.png" alt="Infinity" class="w-1/2 mb-6"> -->
-                    <h3 class="text-3xl text-center text-custom_lime dark:text-white">Regulatory Compliance and User Empowerment</h3>
+                    <h3 class="text-2xl text-center text-custom_lime dark:text-white">Regulatory Compliance and User Empowerment</h3>
                     <p class="hidden sm:block text-center mt-2 text-white dark:text-slate-400">
                         We prioritize regulatory compliance and user convenience through KYC processes, calibrated affordability 
                         assessments, and the creation of credit histories for users, promoting financial inclusion. 
@@ -114,7 +124,7 @@
                 <li
                     class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
                     <!-- <img src="./img/isco.png" alt="Infinity" class="w-1/2 mb-6"> -->
-                    <h3 class="text-3xl text-center text-custom_lime dark:text-white">User-Centric Product Design</h3>
+                    <h3 class="text-2xl text-center text-custom_lime dark:text-white">User-Centric Product Design</h3>
                     <p class="hidden sm:block text-center mt-2 text-white dark:text-slate-400">
                         Our user-centric product design simplifies interaction with our platform, making it user-friendly 
                         nd accessible. Integration of a WhatsApp chatbot reduces data costs and enhances accessibility, 
@@ -127,30 +137,30 @@
 
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
-        <section id="team" class=" justify-center sm:flex-row p-6 items-center gap-8 mb-12">
+        <section id="team" class="mx-auto min-h-90vh max-w-4xl justify-center sm:flex-row p-6 items-center gap-8 mb-12">
             <article class="flex flex-col justify-center items-center">
                 <h2
                         class="max-w-md text-4xl font-bold text-center sm:text-5xl text-custom_lime">
                         Meet the Team
                 </h2>
-            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+            <ul class="list-none mx-auto my-12 flex flex-col sm:grid sm:grid-cols-3 sm:grid-rows-1 items-stretch justify-items-stretch auto-cols-max gap-4">
                 <li
-                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="./img/gregory.png" alt="Explorer" class="w-1/2 mb-6">
-                    <h3 class="text-3xl text-center text-custom_lime dark:text-white">Gregory Andrews</h3>
-                    <p class="hidden sm:block text-2xl text-center mt-2 text-white dark:text-slate-400">Chief Executive Officer </p>
+                    class="flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/gregory_a_1.jpg" alt="Gregory Andrews" class="w-2/3 my-6 rounded-full border-white border-2">
+                    <h3 class="text-2xl text-center text-custom_lime dark:text-white">Gregory Andrews</h3>
+                    <p class="block align-bottom text-xl text-center mt-2 text-white dark:text-slate-400">Chief Executive Officer </p>
                 </li>
                 <li
-                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="./img/donel.png" alt="Adventurer" class="w-1/2 mb-6">
-                    <h3 class="text-3xl text-center text-custom_lime">Donel Chihoma</h3>
-                    <p class="hidden sm:block text-2xl text-center mt-2 text-white ">Chief Operations Officer</p>
+                    class="flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/donel_c_1.jpg" alt="Donel Chihoma" class="w-2/3 my-6 rounded-full border-white border-2">
+                    <h3 class="text-2xl text-center text-custom_lime">Donel Chihoma</h3>
+                    <p class="block align-bottom text-xl text-center mt-2 text-white ">Chief Operations Officer</p>
                 </li>
                 <li
-                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="./img/isco.png" alt="Infinity" class="w-1/2 mb-6">
-                    <h3 class="text-3xl text-center text-custom_lime">Francisco Rutayebesibwa</h3>
-                    <p class="hidden sm:block text-2xl text-center mt-2 text-white">Lead Software Developer</p>
+                    class="flex flex-col items-center border border-solid border-slate-900 bg-gray-800 py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/francisco_r_1.jpg" alt="Fransciso Rutayebesibwa" class="w-2/3 my-6 rounded-full border-white border-2">
+                    <h3 class="text-2xl text-center text-custom_lime">Francisco Rutayebesibwa</h3>
+                    <p class="block align-bottom text-xl text-center mt-2 text-white">Lead Software Developer</p>
                 </li>
             </ul>
         </article>
@@ -159,37 +169,55 @@
 
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
-        <section class="p-6 my-12">
-            <article class="flex flex-col justify-center items-center">
+        <section class="mx-auto max-w-4xl justify-center sm:flex-row p-6 items-center mb-12">
+            <article class="flex flex-col justify-center items-center gap-y-8">
                 <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl text-custom_lime">
                     Partnerships
                 </h2>
-                <br>
-                <a href="https://www.finhub.org.za">
-                    <img src="img/innovation_hub_logo.png" class="w-32" alt="Innovation Hub">
-                </a>
-                <br>
-                <a href="https://www.linkedin.com/company/sense-ims/">
-                    <img src="img/sense_logo.jpg" class="w-32" alt="Sense IMS">
-                </a>
+                <div class="flex flex-col sm:flex-row gap-6 align-middle items-center">
+                    <div class="my-8 sm:my-0">
+                        <a href="https://www.finhub.org.za">
+                            <img src="img/innovation_hub_logo.png" class="w-44" alt="Innovation Hub">
+                        </a>    
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/company/sense-ims/">
+                            <img src="img/sense_logo.jpg" class="w-32" alt="Sense IMS">
+                        </a>
+                    </div>
+                </div>
             </article>
         </section>
         
 
     </main>
 
-    <footer id="footer" class="bg-gray-800 text-custom_lime text-xl">
-        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
-            <address>
-                <h2>Tata-Imali</h2>
-                School of Econcomics, UCT <br>
-                Rondebosch, Cape Town<br>
-                Email: <a href="mailto:andgre007@myuct.ac.za">andgre007@myuct.ac.za</a><br>
-                Phone: <a href="tel:+27723784742">(+27) 723784742</a>
-            </address>
-            <div class="flex flex-col sm:gap-2">
-                <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
-                <p class="text-right">All Rights Reserved</p>
+    <footer id="footer" class="bg-gray-800 text-sm">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col">
+            <a href="#home" class="hidden sm:block">
+                <img src="./img/Tata-iMali-logo-colour-transparent.png" class="h-16">
+            </a>
+            <div class="text-custom_lime sm:flex sm:gap-10">
+                <div>
+                    <h2 class="text-white text-2xl py-4">Get in <span class="text-custom_lime">touch</span>.</h2>
+                    <div class="flex align-middle"><span><img src="./img/email_icon_white.svg" class="w-5"></span>&nbsp;<a href="mailto:andgre007@myuct.ac.za" class="hover:text-white">andgre007@myuct.ac.za</a></div>
+                    <div class="flex align-middle"><span><img src="./img/call_icon_white.svg" class="w-5"></span>&nbsp;<a href="tel:+27723784742" class="hover:text-white">(+27) 723784742</a></div>
+                </div>
+                <div>
+                    <h2 class="text-white text-2xl py-4"><span class="text-custom_lime">You</span> can find <span class="text-custom_lime">us</span> here.</h2>
+                    <div class="flex">
+                        <img src="./img/location_icon_white.svg" class="h-6">
+                        <a href="https://maps.app.goo.gl/SxDtaRP8a7EkiA7Z9" target="_blank" class="hover:text-white">
+                            Room 2.29, the School of Economics<br>
+                            Middle Campus, University of Cape Town<br>
+                            Rondebosch, Cape Town
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-white mt-8">
+                <p class="text-center">Copyright &copy; <span id="year">2023. </span>All Rights Reserved.</p>
             </div>
         </section>
     </footer>
