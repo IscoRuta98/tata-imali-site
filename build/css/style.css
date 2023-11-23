@@ -558,6 +558,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -588,6 +598,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -638,6 +652,10 @@ video {
   width: 100%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -680,6 +698,14 @@ video {
   grid-auto-columns: max-content;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -704,6 +730,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .justify-items-stretch {
   justify-items: stretch;
 }
@@ -720,6 +750,14 @@ video {
   gap: 2rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-y-8 {
   row-gap: 2rem;
 }
@@ -732,6 +770,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-3xl {
@@ -902,12 +944,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.custom-border {
-  -o-border-image: url(../src/img/dots.svg) 100% round;
-     border-image: url(../src/img/dots.svg) 100% round;
-  /* ... */
-}
-
 .hover\:text-custom_lime:hover {
   --tw-text-opacity: 1;
   color: rgb(190 242 100 / var(--tw-text-opacity));
@@ -965,10 +1001,6 @@ video {
     display: block;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:grid {
     display: grid;
   }
@@ -989,8 +1021,16 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1010,4 +1050,3 @@ video {
     line-height: 1;
   }
 }
-  
